@@ -361,10 +361,6 @@ function solution(gridarr)
 {
 	do
 	{
-		if (inconsistent(gridarr))
-		{	
-			return;
-		}
 		if (hasZeros(optgrid(gridarr)))
 		{
 			return;
