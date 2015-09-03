@@ -132,7 +132,7 @@ function fullTest(gridarr, row, col)
 	return columnTest(gridarr,row,col)&&rowTest(gridarr,row,col)&&blockTest(gridarr,row,col);
 }
 /* UNIQUENESS TESTS
-These check whether there's only one place a digit can go in a row, column or block. They use the consistency checks above to verify digit compatibility. /*
+These check whether there's only one place a digit can go in a row, column or block. They use the consistency checks above to verify digit compatibility. */
 function rowUnique(gridarr, digit, row)
 {
 	var rowpositions = 0;
