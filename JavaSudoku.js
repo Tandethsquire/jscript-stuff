@@ -48,7 +48,7 @@ function getArray()
 			// Try to avoid user error in input (obviously a checking mechanism would help to make sure the user has entered the desired grid, but meh).
 			if (entry == "" || parseInt(entry) == NaN || parseInt(entry) > 9 || parseInt(entry)<1)
 			{
-				tempArray.push(0);	
+				tempArray.push(0);
 			}
 			else
 			{
@@ -180,7 +180,7 @@ function blockUnique(gridarr, digit, row, col)
 				if (fullTest(gridarr,i,j))
 					blockpositions++;
 				gridarr[i][j]=0;
-			}	
+			}
 		}
 	}
 	if (blockpositions == 1)
@@ -188,7 +188,7 @@ function blockUnique(gridarr, digit, row, col)
 	return false;
 }
 
-// The full uniqueness test. 
+// The full uniqueness test.
 //Note that we have ||, rather than &&, as we only need uniqueness in ONE of the row, column or block.
 function fullUnique(gridarr, digit, row, col)
 {
@@ -263,7 +263,7 @@ function printArray(ingrid,ident)
 			res += ingrid[i][j];
 		}
 		res += "<br />";
-	}	
+	}
 	res += "</div>";
 	document.getElementById(ident).innerHTML = res;
 }
@@ -388,4 +388,6 @@ function solution(gridarr)
 		}
 	} while (hasZeros(gridarr));
 	updateInput(gridarr);
+
+	//This is a comment to see if I can use github with Atom.
 }
